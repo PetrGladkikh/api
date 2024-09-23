@@ -1,0 +1,362 @@
+{
+	"id": "1e49566a-90e6-4019-9776-bf9f3916454b",
+	"name": "Demoshopping",
+	"timestamp": "2024-09-23T13:54:37.282Z",
+	"collection_id": "26631222-78ab6e8b-c2a6-4a4f-8325-32075a570e99",
+	"folder_id": "26631222-36c9e4a9-d65c-464e-a04c-7ce54fdf525a",
+	"environment_id": "26631222-8d3656cd-3e80-4c2f-9e57-4739ee051815",
+	"totalPass": 13,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-09-23T13:54:31.583Z",
+	"totalFail": 4,
+	"results": [
+		{
+			"id": "dffb88e5-4e69-468f-a109-640d8f57e868",
+			"name": "GetProductList",
+			"url": "/products",
+			"time": 1397,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify that status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Verify that response array is not empty": true,
+				"Content-Type is present and is application/json": false,
+				"Cache-Control is present and is no-cache": false,
+				"X-Powered-By is present and contains Express": true
+			},
+			"testPassFailCounts": {
+				"Verify that status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that response array is not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present and is application/json": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Cache-Control is present and is no-cache": {
+					"pass": 0,
+					"fail": 1
+				},
+				"X-Powered-By is present and contains Express": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1397
+			],
+			"allTests": [
+				{
+					"Verify that status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Verify that response array is not empty": true,
+					"Content-Type is present and is application/json": false,
+					"Cache-Control is present and is no-cache": false,
+					"X-Powered-By is present and contains Express": true
+				}
+			]
+		},
+		{
+			"id": "025d2472-8c52-4809-b6f5-606da0f75c76",
+			"name": "AddProduct",
+			"url": "https://qa.demoshopping.ru/add-product?product_id=2319",
+			"time": 422,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify that status code is 200": true,
+				"Verify that response time is less than 2000ms": true,
+				"Verify that response body contains data that product is added": true
+			},
+			"testPassFailCounts": {
+				"Verify that status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that response body contains data that product is added": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				422
+			],
+			"allTests": [
+				{
+					"Verify that status code is 200": true,
+					"Verify that response time is less than 2000ms": true,
+					"Verify that response body contains data that product is added": true
+				}
+			]
+		},
+		{
+			"id": "1c51f089-f312-4802-a372-c599540198d2",
+			"name": "GetProductData",
+			"url": "https://qa.demoshopping.ru/products/id/2322",
+			"time": 419,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify that status code is 200": true,
+				"Verify that response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Verify that status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				419
+			],
+			"allTests": [
+				{
+					"Verify that status code is 200": true,
+					"Verify that response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "0c236b11-2c4a-4bd6-9c59-df1e73db6dbe",
+			"name": "DeleteProduct",
+			"url": "https://qa.demoshopping.ru/products/id/2322",
+			"time": 417,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify that status code is 200": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Verify that status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				417
+			],
+			"allTests": [
+				{
+					"Verify that status code is 200": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "b8f61dc4-c9bf-46ce-ba63-baa7d4a36012",
+			"name": "UpdateProductData",
+			"url": "https://qa.demoshopping.ru/products/id/2322",
+			"time": 401,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Verify that status code is 200": false,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Verify that status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				401
+			],
+			"allTests": [
+				{
+					"Verify that status code is 200": false,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "561ac689-b1db-4c53-ab4e-18bc1724a849",
+			"name": "PartiallyUpdateProductData",
+			"url": "https://qa.demoshopping.ru/products/id/2322",
+			"time": 399,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Verify that status code is 200": false,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Verify that status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				399
+			],
+			"allTests": [
+				{
+					"Verify that status code is 200": false,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "045a270b-0717-4ce4-aa8c-667b7e6a4f0f",
+			"name": "FindByCategory",
+			"url": "https://qa.demoshopping.ru/products/FindByCategory?category=phones",
+			"time": 405,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				405
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "96717783-c647-4582-8653-a3a94141160c",
+			"name": "FindByManufacturer",
+			"url": "https://qa.demoshopping.ru/products/FindByManufacturer?manufacturer=Samsung",
+			"time": 404,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				404
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "5df96286-87fa-4b1c-b11d-a9fa64900fcd",
+			"name": "FindByShipping",
+			"url": "https://qa.demoshopping.ru/products/FindByShipping?freeShipping=false",
+			"time": 404,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				404
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c99f0bdb-47d4-47fa-a9d5-87fab76ebed4",
+			"name": "GetFilteredProducts",
+			"url": "https://qa.demoshopping.ru/products/filter?category=Laptops&manufacturer=Samsung&freeShipping=false&minPrice=100&maxPrice=5000",
+			"time": 401,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				401
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 5069,
+	"collection": {
+		"requests": [
+			{
+				"id": "dffb88e5-4e69-468f-a109-640d8f57e868",
+				"method": "GET"
+			},
+			{
+				"id": "025d2472-8c52-4809-b6f5-606da0f75c76",
+				"method": "POST"
+			},
+			{
+				"id": "1c51f089-f312-4802-a372-c599540198d2",
+				"method": "GET"
+			},
+			{
+				"id": "0c236b11-2c4a-4bd6-9c59-df1e73db6dbe",
+				"method": "DELETE"
+			},
+			{
+				"id": "b8f61dc4-c9bf-46ce-ba63-baa7d4a36012",
+				"method": "PUT"
+			},
+			{
+				"id": "561ac689-b1db-4c53-ab4e-18bc1724a849",
+				"method": "PATCH"
+			},
+			{
+				"id": "045a270b-0717-4ce4-aa8c-667b7e6a4f0f",
+				"method": "GET"
+			},
+			{
+				"id": "96717783-c647-4582-8653-a3a94141160c",
+				"method": "GET"
+			},
+			{
+				"id": "5df96286-87fa-4b1c-b11d-a9fa64900fcd",
+				"method": "GET"
+			},
+			{
+				"id": "c99f0bdb-47d4-47fa-a9d5-87fab76ebed4",
+				"method": "GET"
+			}
+		]
+	}
+}
